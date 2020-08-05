@@ -25,13 +25,18 @@ p{
     -o-background-size: all 1s;
     -webkit-background-size: all 1s;
 }
+.navbar-brand img{
+    border-radius: 5px;
+}
 .navbar-nav > li > a{
     float: left;
-    color: black;
+    color: #e67777;
     font-size: 18px;
+    font-weight: 600;
 }
 .navbar .navbar-nav > li > a:hover{
     color: #129cf3;
+    border-bottom: #129cf3;
 } 
 .navbar-nav > li > li > a:active,
 .navbar .navbar-nav > li > a:hover,
@@ -39,6 +44,7 @@ p{
 {
     background-color:transparent;
     color: #129cf3;
+    border-bottom: #129cf3;
 }
 .header{
     background-image: url(../IMAGES/background.jpg);
@@ -53,8 +59,10 @@ p{
 .header-overlay{
     background-color: rgba(31,31,31,0.75);
 }
-.logo{
-    padding-bottom: 50px;
+.logo img{
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 .header-section h1{
     color: white;
@@ -73,6 +81,8 @@ p{
 .header-button{
     margin-top: 50px;
     margin-bottom: 60px;
+    width: 80%;
+    align-self: center;
 } 
 .btn-download,
 .btn-download :focus,
@@ -126,12 +136,17 @@ p{
 }
 .header-shoe img{
     width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.75);
+    margin-bottom: 20px;
     
 }
 /* for about US section */
 #about-us-image{
     width: 100%;
     margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.75);
 }
 .section-title h2{
     padding-top: 75px;
@@ -296,7 +311,9 @@ p{
 
 .feature-image img{
     width: 100%;
-    padding-top: 51px;
+    margin-top: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.75);
 }
 .feature-des-right{
     position: relative;
@@ -435,9 +452,7 @@ p{
     border-radius: 30px;
     width: 80%;
     text-align: center;
-    margin-left: 155px;
-    margin-top: 20px;
-    margin-bottom: 1px
+    margin: 20px 0px 2px 12%;
 }
 .available-section{
     position: relative;
@@ -568,4 +583,31 @@ p{
 {
     color: white;
     border-style: groove;
+}
+
+/* media query  */
+@media (max-width: 450px) {
+    .header-button{
+        width: 100%;
+    }
+    .header-button a{
+        margin: 0px;
+        padding: 10px 20px;
+    }
+    #middle-available-now-img{
+        margin-left: 50px;
+    }
+    .btn-purchase{
+        margin-left: 0px;
+        margin-top: 45px !important;
+    }
+    .counter-item > div > i{
+        padding: 15px 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .social-icon a{
+        margin: 0px;
+        font-size: 18px;
+    }
 }
